@@ -12,7 +12,7 @@ LOCKFILE="/tmp/river-autostart.lock"
 terminal="alacritty msg create-window"
 
 # app launcher
-run="set $menu wofi --show=drun --location=top -y 10"
+run="rofi -show run"
 
 # resizing factor
 factor=75

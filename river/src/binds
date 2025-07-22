@@ -8,7 +8,7 @@ map() {
 map $mod Return spawn "$terminal"
 
 # lanching apps
-map $mod D spawn "cd $HOME && $run"
+map $mod D spawn "$run"
 
 # closing the current window
 map $mod+Shift Q close
@@ -50,8 +50,8 @@ done
 map $mod S spawn "bash $cfg/scripts/screenshot.sh"
 
 # changes volume
-map $volkey+up spawn "bash $cfg/scripts/volup.sh"
-map $volkey+down spawn "bash $cfg/scripts/voldown.sh"
+map $volkey up spawn "bash $cfg/scripts/volup.sh"
+map $volkey down spawn "bash $cfg/scripts/voldown.sh"
 
 # there are no brightness mapping because I alredy have
 # a button for that on my monitor. consier using 
