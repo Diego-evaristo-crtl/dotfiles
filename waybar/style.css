@@ -64,3 +64,9 @@ window#waybar {
 #tags button.focused * {
   color: @red;
 }
+
+#window {
+	color: #ffffff;
+	font-style: italic;
+	font-weight: bold;
+}

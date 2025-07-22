@@ -1,0 +1,23 @@
+[window]
+        dynamic_padding=true
+        decorations="Full"
+	opacity=0.9
+
+[font]
+    normal = {family="inconsolata", style="Regular"}
+    bold = {family="inconsolata", style="Bold"}
+    italic = {family="inconsolata", style="Italic"}
+    bold_italic = {family="inconsolata", style="Bold Italic"}
+
+    size=12.25
+    offset = {x=1, y=2}
+
+[colors]
+    cursor = {text="CellBackground", cursor="#696969"}
+
+[colors.primary]
+    background="#22222f"
+    foreground="#dddddd"
+
+[colors.search]
+    matches = {foreground="#9c9c9c", background="#dd3333"}

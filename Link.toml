@@ -2,5 +2,7 @@
 
 [entries]
 "/home/diego/dotfiles/river" = "/home/diego/.config/river"
-"/home/diego/dotfiles/nvim" = "/home/diego/.config/nvim"
+"/home/diego/dotfiles/alacritty" = "/home/diego/.config/alacritty"
 "/home/diego/dotfiles/waybar" = "/home/diego/.config/waybar"
+"/home/diego/dotfiles/nvim" = "/home/diego/.config/nvim"
+"/home/diego/dotfiles/.bashrc" = "/home/diego/.bashrc"

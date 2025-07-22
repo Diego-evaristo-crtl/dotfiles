@@ -22,7 +22,7 @@
 	},
 
 	"river/window": {
-		"format":"[ {} ]",
+		"format":"[{}]",
 		"max-length":20,
 		"tooltip":true
 	},
