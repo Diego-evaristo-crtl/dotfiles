@@ -45,3 +45,14 @@ for i in {1..9}; do
 	map $mod+Control $i toggle-focused-tags $tags
 	map $mod2+Shift $i toggle-view-tags $tags
 done
+
+# allows for screenshot
+map $mod S spawn "bash $cfg/scripts/screenshot.sh"
+
+# changes volume
+map $volkey+up spawn "bash $cfg/scripts/volup.sh"
+map $volkey+down spawn "bash $cfg/scripts/voldown.sh"
+
+# there are no brightness mapping because I alredy have
+# a button for that on my monitor. consier using 
+# brightnessctl is neeeded.

@@ -70,3 +70,8 @@ window#waybar {
 	font-style: italic;
 	font-weight: bold;
 }
+
+#pulseaudio {
+	color: #ffffff;
+	font-weight: bold;
+}

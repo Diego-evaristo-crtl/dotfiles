@@ -3,11 +3,14 @@
 	"position":"bottom",
 	"margin":"10 0 10 10",
 
-	"modules-left": [
-		"river/tags",
-		"river/window"
+	// module positions
+	"modules-left":[
+		"river/window",
+		"pulseaudio"
 	],
-	"modules-center":[],
+	"modules-center": [
+		"river/tags"
+	],
 	"modules-right":[
 		"cpu",
 		"custom/temp",
@@ -16,6 +19,7 @@
 		"clock"
 	],
 
+	// Modules configuration
 	"river/tags": {
 		"num-tags":9,
 		"tag-labels": ["(1)","(2)","(3)","(4)","(5)","(6)","(7)","(8)","(9)"]
@@ -29,25 +33,14 @@
 
 	"cpu": {
 		"interval":3,
-		"format":" {usage}%",
+		"format":"CPU {usage}%",
 		"max-length":15,
 		"on-click":"foot -e btop"
 	},
 
-	"temperature": {
-		"thermal_zone":5,
-		"hwmon-path":"/sys/devices/platform/coretemp.0/hwmon/hwmon6/temp1_input",
-		"interval":2,
-		"critical-threshold":80,
-		"max-length":15,
-		"format-critical":" {temperatureC}°C",
-		"format":" {temperatureC: >2}°C",
-		"tooltip":false
-	},
-
 	"custom/fan": {
 		"exec":"cat /sys/class/hwmon/hwmon*/fan*_input 2>/dev/null || echo 'N/A'",
-		"format":" {} RPM ",
+		"format":"fan {}RPM ",
 		"max-length":15,
 		"interval":5,
 		"tooltip":false
@@ -64,5 +57,9 @@
 		"format":"{:%I:%M %p}",
 		"format-alt":"{:%a, %d %b %Y}",
 		"interval":1
+	},
+
+	"pulseaudio": {
+		"format":"\uf026 {volume}%"
 	}
 }

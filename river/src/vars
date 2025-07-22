@@ -3,6 +3,7 @@
 # mod keys
 mod="Super"
 mod2="Alt"
+volkey="Alt"
 
 # screen locking?
 LOCKFILE="/tmp/river-autostart.lock"
