@@ -1,0 +1,15 @@
+#!/bin/bash
+
+cfg=$HOME/.config/river
+src=$cfg/src
+
+. $src/vars
+. $src/general
+. $src/binds
+
+if [ ! -e "$LOCKFILE" ]; then
+	. $src/autostart &
+	touch "$LOCKFILE"
+else
+	echo "Autostart was skipped. lockfile exist"
+fi

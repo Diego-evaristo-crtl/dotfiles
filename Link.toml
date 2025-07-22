@@ -1,0 +1,6 @@
+[settings]
+
+[entries]
+"/home/diego/dotfiles/river" = "/home/diego/.config/river"
+"/home/diego/dotfiles/nvim" = "/home/diego/.config/nvim"
+"/home/diego/dotfiles/waybar" = "/home/diego/.config/waybar"

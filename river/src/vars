@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# mod keys
+mod="Super"
+mod2="Alt"
+
+# screen locking?
+LOCKFILE="/tmp/river-autostart.lock"
+
+# terminal
+terminal="alacritty msg create-window"
+
+# app launcher
+run="set $menu wofi --show=drun --location=top -y 10"
+
+# resizing factor
+factor=75
+
+# tags [1..9]
+all_tags=1
+for i in {1..9}; do
+	all_tags=$(($all_tags | (1 << $i)))
+done

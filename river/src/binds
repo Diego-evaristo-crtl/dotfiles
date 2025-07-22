@@ -1,0 +1,47 @@
+#!/bin/bash
+
+map() {
+	riverctl map normal "$@"
+}
+
+# spawning allcrity
+map $mod Return spawn "$terminal"
+
+# lanching apps
+map $mod D spawn "cd $HOME && $run"
+
+# closing the current window
+map $mod+Shift Q close
+
+# exit river
+map $mod+Shift E exit
+
+# focusing on next/previous view on the layout stack
+map $mod J focus-view next
+map $mod K focus-view previous
+
+# to move views
+map $mod+$mod2 H move left $factor
+map $mod+$mod2 L move right $factor
+map $mod+$mod2 J move down $factor
+map $mod+$mod2 K move up $factor
+
+# resizing views
+map $mod2+Shift H resize horizontal -$factor
+map $mod2+Shift K resize vertical -$factor
+map $mod2+Shift J resize vertical $factor
+map $mod2+Shift L resize horizontal $factor
+
+# fullscreen
+map $mod F toggle-fullscreen
+
+# setting tags [0..8] with mapping [1..9]
+for i in {1..9}; do
+	tags=$((1 << ($i - 1)))
+
+	# tag-related bindings: tab i uses i+1
+	map $mod $i set-focused-tags $tags
+	map $mod+Shift $i set-view-tags $tags
+	map $mod+Control $i toggle-focused-tags $tags
+	map $mod2+Shift $i toggle-view-tags $tags
+done
