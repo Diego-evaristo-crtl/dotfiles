@@ -1,0 +1,34 @@
+* {
+	color: #aaaaaa;
+	border: 0;
+	font-family: "JetbransMono Nerd Font";
+	font-size: 15px;
+}
+
+window#waybar {
+	background-color: #333333
+}
+
+#clock,
+#custom-swap,
+#custom-clipboard,
+#custom-background,
+#battery,
+#cpu,
+#memory,
+#idle_inhibitor,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#mode,
+#mpd,
+#custom-temp,
+#custom-fan {
+	padding-bottom: 10px;
+	padding: 0px 5px;
+	border-style: solid;
+	opacity: 1;
+	margin: 0 8px;
+	border-radius: 10px;
+}
